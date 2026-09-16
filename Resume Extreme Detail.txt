@@ -1,0 +1,133 @@
+
+Perfect. Here is both versions so you can choose quickly and still keep every important point.
+
+A) Brief Version (Resume Ready, High Impact)
+
+Delivered 100+ commits across Q12026, Q22026, and Revised Q2 2026 branches for an enterprise Risk Assessment platform, owning key modules in Dynamic Library, Landing Page/Queries, and Risk Assessment Dashboard workflows.
+Implemented critical Residual Risk Assessment applicability logic fixes (Y/N behavior), enforcing dependent-field auto-update and editability rules, with strong regression coverage to stabilize production behavior.
+Standardized filter lifecycle behavior (apply/clear/reset) across 5 major modules (Inherent, Residual, 1LoD, 2LoD, Surveillance), improving consistency of user experience and reducing filter-state defects.
+Modernized audit and table interactions by migrating legacy table patterns to a data-grid-based approach, improving maintainability and enabling richer sorting/filtering behavior.
+Enhanced Control Dynamic Table flows across 1LoD/2LoD/Surveillance with dropdown and accordion improvements, plus extensive unit test expansion to improve release confidence.
+Added large-scale automated test coverage (at least 8,000+ lines based on exported stats, likely more), significantly strengthening regression detection across dashboard, dynamic library, and landing workflows.
+B) Extreme Detail Version (STAR Bank, Editable, Do-Not-Miss Coverage)
+
+Core ownership and delivery scale
+Situation: Multiple high-change frontend modules needed parallel enhancement and stabilization.
+Task: Deliver feature updates and bug fixes across risk workflows under active branch development.
+Action: Contributed continuously from Jan to Jun 2026 across Q12026, Q22026, Revised Q2 2026 with sustained commit cadence.
+Result: 100+ commits, broad ownership across Dynamic Library, Landing Page/Queries, Inherent/Residual Risk screens, Control Dynamic Tables, Audit Log, action workflows.
+
+Residual Risk Assessment applicability bug fix (your highlighted commit line)
+Situation: Selecting applicability Y/N did not reliably auto-update downstream fields to N/A or lock edit behavior as expected.
+Task: Correct business-rule enforcement for dependent fields.
+Action: Implemented applicability normalization and dependent-field update logic, plus disable-state enforcement and follow-up test additions.
+Result: Shipped targeted fix in June with substantial code + test updates (324+ visible line delta across two key commits), reducing manual correction and preventing rule violation during edits.
+
+Inherent Risk Assessment workflow strengthening
+Situation: Inherent flow had repeated change pressure around sorting, filtering, edit state, and acknowledgement behavior.
+Task: Keep Inherent screen stable while adding new UX capabilities.
+Action: Implemented dropdown/filter behavior updates, adjusted rating-related logic, clear-filter lifecycle, and supporting tests.
+Result: Large multi-commit impact including significant code and test changes, improving operational reliability in a high-usage workflow.
+
+Residual Risk Assessment workflow strengthening beyond applicability fix
+Situation: Residual flow required repeated alignment for dropdowns, validations, edit paths, and acknowledge-related behavior.
+Task: Stabilize screen behavior under evolving requirements.
+Action: Delivered multiple rounds of logic fixes and feature increments, including clear-filter support and test updates.
+Result: Strong module-level ownership with recurring production-impact commits and high test investment.
+
+Control Dynamic Table architecture (1LoD, 2LoD, Surveillance)
+Situation: Three related control-table modules needed consistent dropdown/filter/header behavior but had divergence risk.
+Task: Deliver parity and reduce regressions across all three modules.
+Action: Updated shared interaction patterns (dropdown filtering, header fields, accordions) and synchronized tests.
+Result: Major quality uplift with large code edits and thousands of test lines across all three modules.
+
+Test strategy and regression safety as a first-class contribution
+Situation: High functional churn required robust automated regression coverage.
+Task: Increase confidence before merges/releases.
+Action: Added and updated tests across risk screens, control dynamic tables, dynamic library, audit log, landing queries, and utilities.
+Result: At least 8,000+ test lines clearly visible in provided exports, with true total likely higher due export truncation; materially improved release confidence.
+
+Dynamic Library reliability and quality hardening
+Situation: Dynamic library had repeated edge-case defects (filter function behavior, select-all interactions, dropdown handling) and static quality issues.
+Task: Stabilize behavior and improve quality posture.
+Action: Iterative fixes for filter/select-all logic, cleanup, and Sonar-driven updates, with test additions.
+Result: Highest touched module in your history (49 touches), indicating clear ownership and sustained defect-reduction effort.
+
+Landing Page and Queries evolution with backend contract updates
+Situation: Query/GraphQL structures changed, including assignment-related field evolution.
+Task: Keep UI and query behavior aligned to schema changes without workflow breaks.
+Action: Updated Landing Page query handling and data models over many commits, including test synchronization.
+Result: 48 touches across Landing Page + Queries core files, maintaining continuity through backend evolution.
+
+Audit log modernization
+Situation: Legacy table approach constrained consistency and maintainability.
+Task: Move audit interactions to modern grid component patterns.
+Action: Converted from table to data-grid patterns and tuned column sizing behavior, with tests.
+Result: Improved consistency with broader dashboard architecture and made future enhancements easier.
+
+Workflow action controls and operational transitions
+Situation: Risk-action paths (approve/cancel/edit style transitions) needed improved UX and alignment with workflow behavior.
+Task: Ensure action controls map cleanly to workflow state transitions.
+Action: Updated action button utility logic and workflow modal behavior with associated screen changes.
+Result: Stronger workflow action reliability for operational users.
+
+Cross-module clear-filter consistency
+Situation: Users experienced inconsistent outcomes when resetting filters across modules.
+Task: Normalize clear-filter behavior for predictable state reset.
+Action: Introduced clear-filter flags and reset handling in Inherent, Residual, and control-table-based screens.
+Result: Better consistency in multi-screen usage and fewer state-stale issues.
+
+Engineering hygiene and maintenance under delivery pressure
+Situation: Active feature development still required dependency and quality maintenance.
+Task: Keep quality/security posture acceptable while shipping.
+Action: Performed package-lock audit-related updates and Sonar-related cleanups.
+Result: Balanced feature velocity with maintainability and quality-gate compliance.
+
+Branch and merge collaboration signal
+Situation: Work progressed in multiple long-running feature branches with integration cycles.
+Task: Keep branches synchronized and integration-ready.
+Action: Participated in regular merges across Q12026/Q22026/Revised_Q2_2026 streams.
+Result: Demonstrated ability to sustain delivery in collaborative branch-based enterprise workflow.
+
+C) What To Keep vs Omit in Resume (Important so you do not weaken profile)
+
+Keep strongly
+Residual applicability fix and business-rule enforcement
+Filter standardization across 5 modules
+Data-grid migration
+Control Dynamic Table improvements across 3 modules
+Test expansion and quality impact
+Dynamic Library reliability work
+Landing GraphQL/query alignment
+Omit or downplay
+Space-only commits
+Console add/remove commits
+Merge conflict-only commit messages
+Typo-only or formatting-only entries unless tied to Sonar/quality outcome
+Reframe if needed
+Package-lock heavy commits should be framed as audit/security/quality maintenance, not as core feature delivery.
+D) Super-Editable STAR Templates (fill quickly)
+
+Feature fix template
+Situation: Users faced [problem] in [module].
+Task: Ensure [target behavior].
+Action: Implemented [logic/validation/UI change] and added [tests].
+Result: Delivered [quantified code/test impact], improving [user outcome/quality metric].
+
+Platform improvement template
+Situation: [Cross-module inconsistency].
+Task: Standardize [behavior].
+Action: Applied common pattern across [X modules].
+Result: Reduced [defect type], improved [consistency/release confidence].
+
+Quality template
+Situation: Frequent changes increased regression risk.
+Task: Improve automated safety net.
+Action: Added tests for [areas].
+Result: Increased coverage with [N+ lines/tests], reducing manual validation dependency.
+
+If you want next, I can give a final polished set in three ready-to-paste formats:
+
+ATS-optimized resume bullets (short, keyword heavy)
+Human-readable resume bullets (balanced narrative)
+Appraisal self-review bullets (impact + ownership + collaboration)
